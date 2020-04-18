@@ -4,7 +4,10 @@ import React, { useState } from 'react';
 import { StyleSheet } from 'react-native';
 
 import MealsNavigator from './navigation/MealsNavigator';
+import { enableScreens } from 'react-native-screens';
 
+enableScreens();
+ 
 const fetchFonts = () => {
   return Font.loadAsync({
     'open-sans': require('./assets/fonts/OpenSans-Regular.ttf'),
